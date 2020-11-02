@@ -5,3 +5,4 @@ GoF Design patterns implementations based on [Dmitri Nesteruk's course](https://
 
 - **Builder** *When piecewise object construction is complicated, provide an API for doing it succinctly*.
 - **Factory** *A component responsible solely for the wholesale (not piecewise) creation of objects*.
+- **Singleton** *A component which is instantiated only once*.
