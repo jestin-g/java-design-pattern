@@ -1,4 +1,4 @@
-package factory.method;
+package factory.examples.method;
 
 enum CoordinateSystem {
     CARTESIAN,

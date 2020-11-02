@@ -1,4 +1,4 @@
-package factory.nested;
+package factory.examples.nested;
 
 class FactoryDemo {
     public static void main(String[] args) {

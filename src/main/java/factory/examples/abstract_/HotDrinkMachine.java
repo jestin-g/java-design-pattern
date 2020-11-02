@@ -1,4 +1,4 @@
-package factory.abstract_;
+package factory.examples.abstract_;
 
 import org.javatuples.Pair;
 import org.reflections.Reflections;

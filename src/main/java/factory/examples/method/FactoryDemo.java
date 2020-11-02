@@ -1,4 +1,4 @@
-package factory.method;
+package factory.examples.method;
 
 class FactoryDemo {
     public static void main(String[] args) {

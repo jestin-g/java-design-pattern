@@ -1,4 +1,4 @@
-package factory.abstract_;
+package factory.examples.abstract_;
 
 public class CoffeeFactory implements IHotDrinkFactory {
     public IHotDrink prepare(int amount) {

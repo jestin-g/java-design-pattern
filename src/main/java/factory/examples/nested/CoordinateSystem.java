@@ -1,4 +1,4 @@
-package factory.nested;
+package factory.examples.nested;
 
 enum CoordinateSystem {
     CARTESIAN,

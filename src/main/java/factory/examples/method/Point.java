@@ -1,4 +1,4 @@
-package factory.method;
+package factory.examples.method;
 
 class Point {
     private double x, y;

@@ -1,4 +1,4 @@
-package factory.nested;
+package factory.examples.nested;
 
 class Point {
     private double x, y;
