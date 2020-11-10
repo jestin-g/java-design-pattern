@@ -16,6 +16,10 @@ public class LightSwitch {
         this.state.off(this);
     }
 
+    public void fix() {
+        this.state.fix(this);
+    }
+
     public void setState(State state) {
         this.state = state;
     }

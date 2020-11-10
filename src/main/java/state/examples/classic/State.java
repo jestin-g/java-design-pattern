@@ -10,4 +10,9 @@ public class State {
         System.out.println("Light is already off");
     }
 
+    public void fix(LightSwitch ls) {
+        System.out.println("Light is not broken");
+    }
+
+
 }

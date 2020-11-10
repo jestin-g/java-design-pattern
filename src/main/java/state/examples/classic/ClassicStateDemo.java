@@ -6,5 +6,9 @@ public class ClassicStateDemo {
         lightSwitch.on();
         lightSwitch.off();
         lightSwitch.off();
+        lightSwitch.fix();
+        lightSwitch.setState(new BrokenState());
+        lightSwitch.fix();
+        lightSwitch.on();
     }
 }
