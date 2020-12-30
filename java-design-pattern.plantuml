@@ -1,0 +1,410 @@
+@startuml
+
+title __JAVA-DESIGN-PATTERN's Class Diagram__\n
+
+  namespace adapter.examples.vectorRaster {
+    class adapter.examples.vectorRaster.AdapterDemo {
+    }
+  }
+  
+
+  namespace adapter.examples.vectorRaster {
+    class adapter.examples.vectorRaster.Line {
+    }
+  }
+  
+
+  namespace adapter.examples.vectorRaster {
+    class adapter.examples.vectorRaster.LineToPointAdapter {
+    }
+  }
+  
+
+  namespace adapter.examples.vectorRaster {
+    class adapter.examples.vectorRaster.Point {
+    }
+  }
+  
+
+  namespace adapter.examples.vectorRaster {
+    class adapter.examples.vectorRaster.VectorObject {
+    }
+  }
+  
+
+  namespace adapter.examples.vectorRaster {
+    class adapter.examples.vectorRaster.VectorRectangle {
+    }
+  }
+  
+
+  namespace builder.examples.faceted {
+    class builder.examples.faceted.BuilderFacetsDemo {
+    }
+  }
+  
+
+  namespace builder.examples.faceted {
+    class builder.examples.faceted.Person {
+    }
+  }
+  
+
+  namespace builder.examples.faceted {
+    class builder.examples.faceted.PersonAddressBuilder {
+    }
+  }
+  
+
+  namespace builder.examples.faceted {
+    class builder.examples.faceted.PersonBuilder {
+    }
+  }
+  
+
+  namespace builder.examples.faceted {
+    class builder.examples.faceted.PersonJobBuilder {
+    }
+  }
+  
+
+  namespace builder.examples.recursiveGeneric {
+    class builder.examples.recursiveGeneric.EmployeeBuilder {
+    }
+  }
+  
+
+  namespace builder.examples.recursiveGeneric {
+    class builder.examples.recursiveGeneric.Person {
+    }
+  }
+  
+
+  namespace builder.examples.recursiveGeneric {
+    class builder.examples.recursiveGeneric.PersonBuilder {
+    }
+  }
+  
+
+  namespace builder.examples.simple {
+    class builder.examples.simple.BuilderDemo {
+    }
+  }
+  
+
+  namespace builder.examples.simple {
+    class builder.examples.simple.HtmlBuilder {
+    }
+  }
+  
+
+  namespace builder.examples.simple {
+    class builder.examples.simple.HtmlElement {
+    }
+  }
+  
+
+  namespace builder.exercice {
+    class builder.exercice.CodeBuilder {
+    }
+  }
+  
+
+  namespace builder.exercice {
+    class builder.exercice.CodeBuilderDemo {
+    }
+  }
+  
+
+  namespace builder.exercice {
+    class builder.exercice.CodeElement {
+    }
+  }
+  
+
+  namespace composite.examples.geometricShapes {
+    class composite.examples.geometricShapes.Circle {
+    }
+  }
+  
+
+  namespace composite.examples.geometricShapes {
+    class composite.examples.geometricShapes.CompositeDemo {
+    }
+  }
+  
+
+  namespace composite.examples.geometricShapes {
+    class composite.examples.geometricShapes.GraphicObject {
+    }
+  }
+  
+
+  namespace composite.examples.geometricShapes {
+    class composite.examples.geometricShapes.Square {
+    }
+  }
+  
+
+  namespace decorator.dynamic {
+    class decorator.dynamic.ColoredShape {
+    }
+  }
+  
+
+  namespace decorator.dynamic {
+    class decorator.dynamic.DynamicDecoratorDemo {
+    }
+  }
+  
+
+  namespace decorator.dynamic {
+    class decorator.dynamic.TransparentShape {
+    }
+  }
+  
+
+  namespace decorator.dynamic {
+    namespace base {
+      class decorator.dynamic.base.Circle {
+      }
+    }
+  }
+  
+
+  namespace decorator.dynamic {
+    namespace base {
+      interface decorator.dynamic.base.Shape {
+      }
+    }
+  }
+  
+
+  namespace decorator.dynamic {
+    namespace base {
+      class decorator.dynamic.base.Square {
+      }
+    }
+  }
+  
+
+  namespace decorator.string {
+    class decorator.string.DecoratorStringDemo {
+    }
+  }
+  
+
+  namespace decorator.string {
+    class decorator.string.MagicString {
+    }
+  }
+  
+
+  namespace factory.examples.abstract_ {
+    class factory.examples.abstract_.AbstractFactoryDemo {
+    }
+  }
+  
+
+  namespace factory.examples.abstract_ {
+    class factory.examples.abstract_.Coffee {
+    }
+  }
+  
+
+  namespace factory.examples.abstract_ {
+    class factory.examples.abstract_.CoffeeFactory {
+    }
+  }
+  
+
+  namespace factory.examples.abstract_ {
+    class factory.examples.abstract_.HotDrinkMachine {
+    }
+  }
+  
+
+  namespace factory.examples.abstract_ {
+    interface factory.examples.abstract_.IHotDrink {
+    }
+  }
+  
+
+  namespace factory.examples.abstract_ {
+    interface factory.examples.abstract_.IHotDrinkFactory {
+    }
+  }
+  
+
+  namespace factory.examples.abstract_ {
+    class factory.examples.abstract_.Tea {
+    }
+  }
+  
+
+  namespace factory.examples.abstract_ {
+    class factory.examples.abstract_.TeaFactory {
+    }
+  }
+  
+
+  namespace factory.examples.method {
+    enum CoordinateSystem {
+    }
+  }
+  
+
+  namespace factory.examples.method {
+    class factory.examples.method.FactoryDemo {
+    }
+  }
+  
+
+  namespace factory.examples.method {
+    class factory.examples.method.Point {
+    }
+  }
+  
+
+  namespace factory.examples.nested {
+    enum CoordinateSystem {
+    }
+  }
+  
+
+  namespace factory.examples.nested {
+    class factory.examples.nested.FactoryDemo {
+    }
+  }
+  
+
+  namespace factory.examples.nested {
+    class factory.examples.nested.Point {
+    }
+  }
+  
+
+  namespace singleton.examples.basic {
+    class singleton.examples.basic.BasicSingleton {
+    }
+  }
+  
+
+  namespace singleton.examples.basic {
+    class singleton.examples.basic.BasicSingletonDemo {
+    }
+  }
+  
+
+  namespace state.examples.classic {
+    class state.examples.classic.BrokenState {
+    }
+  }
+  
+
+  namespace state.examples.classic {
+    class state.examples.classic.ClassicStateDemo {
+    }
+  }
+  
+
+  namespace state.examples.classic {
+    class state.examples.classic.LightSwitch {
+    }
+  }
+  
+
+  namespace state.examples.classic {
+    class state.examples.classic.OffState {
+    }
+  }
+  
+
+  namespace state.examples.classic {
+    class state.examples.classic.OnState {
+    }
+  }
+  
+
+  namespace state.examples.classic {
+    class state.examples.classic.State {
+    }
+  }
+  
+
+  namespace strategy.examples.dynamic {
+    class strategy.examples.dynamic.DynamicStrategyDemo {
+    }
+  }
+  
+
+  namespace strategy.examples.dynamic {
+    class strategy.examples.dynamic.HtmlListStrategy {
+    }
+  }
+  
+
+  namespace strategy.examples.dynamic {
+    interface strategy.examples.dynamic.ListStrategy {
+    }
+  }
+  
+
+  namespace strategy.examples.dynamic {
+    class strategy.examples.dynamic.MarkdownListStrategy {
+    }
+  }
+  
+
+  namespace strategy.examples.dynamic {
+    enum OutputFormat {
+    }
+  }
+  
+
+  namespace strategy.examples.dynamic {
+    class strategy.examples.dynamic.TextProcessor {
+    }
+  }
+  
+
+  adapter.examples.vectorRaster.Line o-- adapter.examples.vectorRaster.Point : end
+  adapter.examples.vectorRaster.Line o-- adapter.examples.vectorRaster.Point : start
+  adapter.examples.vectorRaster.LineToPointAdapter -up-|> java.util.ArrayList
+  adapter.examples.vectorRaster.VectorObject -up-|> java.util.ArrayList
+  adapter.examples.vectorRaster.VectorRectangle -up-|> adapter.examples.vectorRaster.VectorObject
+  builder.examples.faceted.PersonAddressBuilder -up-|> builder.examples.faceted.PersonBuilder
+  builder.examples.faceted.PersonBuilder o-- builder.examples.faceted.Person : person
+  builder.examples.faceted.PersonJobBuilder -up-|> builder.examples.faceted.PersonBuilder
+  builder.examples.recursiveGeneric.EmployeeBuilder -up-|> builder.examples.recursiveGeneric.PersonBuilder
+  builder.examples.recursiveGeneric.PersonBuilder o-- builder.examples.recursiveGeneric.Person : person
+  builder.examples.simple.HtmlBuilder o-- builder.examples.simple.HtmlElement : root
+  composite.examples.geometricShapes.Circle -up-|> composite.examples.geometricShapes.GraphicObject
+  composite.examples.geometricShapes.Square -up-|> composite.examples.geometricShapes.GraphicObject
+  decorator.dynamic.ColoredShape .up.|> decorator.dynamic.base.Shape
+  decorator.dynamic.ColoredShape o-- decorator.dynamic.base.Shape : shape
+  decorator.dynamic.TransparentShape .up.|> decorator.dynamic.base.Shape
+  decorator.dynamic.TransparentShape o-- decorator.dynamic.base.Shape : shape
+  decorator.dynamic.base.Circle .up.|> decorator.dynamic.base.Shape
+  decorator.dynamic.base.Square .up.|> decorator.dynamic.base.Shape
+  factory.examples.abstract_.Coffee .up.|> factory.examples.abstract_.IHotDrink
+  factory.examples.abstract_.CoffeeFactory .up.|> factory.examples.abstract_.IHotDrinkFactory
+  factory.examples.abstract_.Tea .up.|> factory.examples.abstract_.IHotDrink
+  factory.examples.abstract_.TeaFactory .up.|> factory.examples.abstract_.IHotDrinkFactory
+  state.examples.classic.BrokenState -up-|> state.examples.classic.State
+  state.examples.classic.LightSwitch o-- state.examples.classic.State : state
+  state.examples.classic.OffState -up-|> state.examples.classic.State
+  state.examples.classic.OnState -up-|> state.examples.classic.State
+  strategy.examples.dynamic.HtmlListStrategy .up.|> strategy.examples.dynamic.ListStrategy
+  strategy.examples.dynamic.MarkdownListStrategy .up.|> strategy.examples.dynamic.ListStrategy
+  strategy.examples.dynamic.TextProcessor o-- strategy.examples.dynamic.ListStrategy : listStrategy
+
+
+right footer
+
+
+PlantUML diagram generated by SketchIt! (https://bitbucket.org/pmesmeur/sketch.it)
+For more information about this tool, please contact philippe.mesmeur@gmail.com
+endfooter
+
+@enduml
