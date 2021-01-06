@@ -1,6 +1,6 @@
 package visitor.examples.classic;
 
-public class AdditionExpression extends Expression {
+public class AdditionExpression implements Expression {
     private Expression left;
     private Expression right;
 

@@ -1,6 +1,6 @@
 package visitor.examples.classic;
 
-public class DoubleExpression extends Expression {
+public class DoubleExpression implements Expression {
     private double value;
 
     public DoubleExpression(double value) {
