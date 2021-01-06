@@ -30,7 +30,7 @@ title __CLASSIC's Class Diagram__\n
   
 
   namespace visitor.examples.classic {
-    abstract class visitor.examples.classic.Expression {
+    interface visitor.examples.classic.Expression {
         {abstract} + accept()
     }
   }
@@ -64,10 +64,10 @@ title __CLASSIC's Class Diagram__\n
   }
   
 
-  visitor.examples.classic.AdditionExpression -up-|> visitor.examples.classic.Expression
+  visitor.examples.classic.AdditionExpression .up.|> visitor.examples.classic.Expression
   visitor.examples.classic.AdditionExpression o-- visitor.examples.classic.Expression : left
   visitor.examples.classic.AdditionExpression o-- visitor.examples.classic.Expression : right
-  visitor.examples.classic.DoubleExpression -up-|> visitor.examples.classic.Expression
+  visitor.examples.classic.DoubleExpression .up.|> visitor.examples.classic.Expression
   visitor.examples.classic.ExpressionCalculator .up.|> visitor.examples.classic.ExpressionVisitor
   visitor.examples.classic.ExpressionPrinter .up.|> visitor.examples.classic.ExpressionVisitor
 

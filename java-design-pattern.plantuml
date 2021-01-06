@@ -411,7 +411,7 @@ title __JAVA-DESIGN-PATTERN's Class Diagram__\n
   
 
   namespace visitor.examples.classic {
-    abstract class visitor.examples.classic.Expression {
+    interface visitor.examples.classic.Expression {
     }
   }
   
@@ -521,10 +521,10 @@ title __JAVA-DESIGN-PATTERN's Class Diagram__\n
   strategy.examples.dynamic.HtmlListStrategy .up.|> strategy.examples.dynamic.ListStrategy
   strategy.examples.dynamic.MarkdownListStrategy .up.|> strategy.examples.dynamic.ListStrategy
   strategy.examples.dynamic.TextProcessor o-- strategy.examples.dynamic.ListStrategy : listStrategy
-  visitor.examples.classic.AdditionExpression -up-|> visitor.examples.classic.Expression
+  visitor.examples.classic.AdditionExpression .up.|> visitor.examples.classic.Expression
   visitor.examples.classic.AdditionExpression o-- visitor.examples.classic.Expression : left
   visitor.examples.classic.AdditionExpression o-- visitor.examples.classic.Expression : right
-  visitor.examples.classic.DoubleExpression -up-|> visitor.examples.classic.Expression
+  visitor.examples.classic.DoubleExpression .up.|> visitor.examples.classic.Expression
   visitor.examples.classic.ExpressionCalculator .up.|> visitor.examples.classic.ExpressionVisitor
   visitor.examples.classic.ExpressionPrinter .up.|> visitor.examples.classic.ExpressionVisitor
   visitor.examples.intrusive.AdditionExpression -up-|> visitor.examples.intrusive.Expression
