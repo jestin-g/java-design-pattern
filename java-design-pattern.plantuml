@@ -284,6 +284,30 @@ title __JAVA-DESIGN-PATTERN's Class Diagram__\n
   }
   
 
+  namespace iterator.examples.treeTraversal {
+    class iterator.examples.treeTraversal.BinaryTree {
+    }
+  }
+  
+
+  namespace iterator.examples.treeTraversal {
+    class iterator.examples.treeTraversal.Demo {
+    }
+  }
+  
+
+  namespace iterator.examples.treeTraversal {
+    class iterator.examples.treeTraversal.InOrderIterator {
+    }
+  }
+  
+
+  namespace iterator.examples.treeTraversal {
+    class iterator.examples.treeTraversal.Node {
+    }
+  }
+  
+
   namespace singleton.examples.basic {
     class singleton.examples.basic.BasicSingleton {
     }
@@ -368,6 +392,102 @@ title __JAVA-DESIGN-PATTERN's Class Diagram__\n
   }
   
 
+  namespace visitor.examples.classic {
+    class visitor.examples.classic.AdditionExpression {
+    }
+  }
+  
+
+  namespace visitor.examples.classic {
+    class visitor.examples.classic.Demo {
+    }
+  }
+  
+
+  namespace visitor.examples.classic {
+    class visitor.examples.classic.DoubleExpression {
+    }
+  }
+  
+
+  namespace visitor.examples.classic {
+    abstract class visitor.examples.classic.Expression {
+    }
+  }
+  
+
+  namespace visitor.examples.classic {
+    class visitor.examples.classic.ExpressionCalculator {
+    }
+  }
+  
+
+  namespace visitor.examples.classic {
+    class visitor.examples.classic.ExpressionPrinter {
+    }
+  }
+  
+
+  namespace visitor.examples.classic {
+    interface visitor.examples.classic.ExpressionVisitor {
+    }
+  }
+  
+
+  namespace visitor.examples.intrusive {
+    class visitor.examples.intrusive.AdditionExpression {
+    }
+  }
+  
+
+  namespace visitor.examples.intrusive {
+    class visitor.examples.intrusive.Demo {
+    }
+  }
+  
+
+  namespace visitor.examples.intrusive {
+    class visitor.examples.intrusive.DoubleExpression {
+    }
+  }
+  
+
+  namespace visitor.examples.intrusive {
+    abstract class visitor.examples.intrusive.Expression {
+    }
+  }
+  
+
+  namespace visitor.examples.reflective {
+    class visitor.examples.reflective.AdditionExpression {
+    }
+  }
+  
+
+  namespace visitor.examples.reflective {
+    class visitor.examples.reflective.Demo {
+    }
+  }
+  
+
+  namespace visitor.examples.reflective {
+    class visitor.examples.reflective.DoubleExpression {
+    }
+  }
+  
+
+  namespace visitor.examples.reflective {
+    abstract class visitor.examples.reflective.Expression {
+    }
+  }
+  
+
+  namespace visitor.examples.reflective {
+    class visitor.examples.reflective.ExpressionPrinter {
+    }
+  }
+  
+
   adapter.examples.vectorRaster.Line o-- adapter.examples.vectorRaster.Point : end
   adapter.examples.vectorRaster.Line o-- adapter.examples.vectorRaster.Point : start
   adapter.examples.vectorRaster.LineToPointAdapter -up-|> java.util.ArrayList
@@ -391,6 +511,9 @@ title __JAVA-DESIGN-PATTERN's Class Diagram__\n
   factory.examples.abstract_.CoffeeFactory .up.|> factory.examples.abstract_.IHotDrinkFactory
   factory.examples.abstract_.Tea .up.|> factory.examples.abstract_.IHotDrink
   factory.examples.abstract_.TeaFactory .up.|> factory.examples.abstract_.IHotDrinkFactory
+  iterator.examples.treeTraversal.BinaryTree .up.|> java.lang.Iterable
+  iterator.examples.treeTraversal.InOrderIterator .up.|> java.util.Iterator
+  iterator.examples.treeTraversal.Node o-- T : value
   state.examples.classic.BrokenState -up-|> state.examples.classic.State
   state.examples.classic.LightSwitch o-- state.examples.classic.State : state
   state.examples.classic.OffState -up-|> state.examples.classic.State
@@ -398,6 +521,20 @@ title __JAVA-DESIGN-PATTERN's Class Diagram__\n
   strategy.examples.dynamic.HtmlListStrategy .up.|> strategy.examples.dynamic.ListStrategy
   strategy.examples.dynamic.MarkdownListStrategy .up.|> strategy.examples.dynamic.ListStrategy
   strategy.examples.dynamic.TextProcessor o-- strategy.examples.dynamic.ListStrategy : listStrategy
+  visitor.examples.classic.AdditionExpression -up-|> visitor.examples.classic.Expression
+  visitor.examples.classic.AdditionExpression o-- visitor.examples.classic.Expression : left
+  visitor.examples.classic.AdditionExpression o-- visitor.examples.classic.Expression : right
+  visitor.examples.classic.DoubleExpression -up-|> visitor.examples.classic.Expression
+  visitor.examples.classic.ExpressionCalculator .up.|> visitor.examples.classic.ExpressionVisitor
+  visitor.examples.classic.ExpressionPrinter .up.|> visitor.examples.classic.ExpressionVisitor
+  visitor.examples.intrusive.AdditionExpression -up-|> visitor.examples.intrusive.Expression
+  visitor.examples.intrusive.AdditionExpression o-- visitor.examples.intrusive.Expression : left
+  visitor.examples.intrusive.AdditionExpression o-- visitor.examples.intrusive.Expression : right
+  visitor.examples.intrusive.DoubleExpression -up-|> visitor.examples.intrusive.Expression
+  visitor.examples.reflective.AdditionExpression -up-|> visitor.examples.reflective.Expression
+  visitor.examples.reflective.AdditionExpression o-- visitor.examples.reflective.Expression : left
+  visitor.examples.reflective.AdditionExpression o-- visitor.examples.reflective.Expression : right
+  visitor.examples.reflective.DoubleExpression -up-|> visitor.examples.reflective.Expression
 
 
 right footer

@@ -1,4 +1,4 @@
-package visitor.examples.reflective;
+package visitor.examples.classic;
 
 public class AdditionExpression extends Expression {
     private Expression left;
@@ -15,5 +15,10 @@ public class AdditionExpression extends Expression {
 
     public Expression getRight() {
         return right;
+    }
+
+    @Override
+    public void accept(ExpressionVisitor visitor) {
+        visitor.visit(this);
     }
 }

@@ -1,4 +1,4 @@
-package visitor.examples.reflective;
+package visitor.examples.classic;
 
 /**
  * This method is slow because of checking the type on each call and a bit painful to do.
@@ -6,7 +6,7 @@ package visitor.examples.reflective;
  */
 public class Demo {
     public static void main(String[] args) {
-        // 1 + (2 + 3)
+        // 1+(2+3)=6
         AdditionExpression e = new AdditionExpression(
                 new DoubleExpression(1),
                 new AdditionExpression(
@@ -15,9 +15,13 @@ public class Demo {
                 )
         );
 
-        StringBuilder sb = new StringBuilder();
-        ExpressionPrinter.print(e, sb);
-        System.out.println(sb );
+        ExpressionPrinter ep = new ExpressionPrinter();
+        ep.visit(e);
+        System.out.println(ep);
+
+        ExpressionCalculator ec = new ExpressionCalculator();
+        ec.visit(e);
+        System.out.println(ep + " = " + ec.getResult());
 
     }
 }

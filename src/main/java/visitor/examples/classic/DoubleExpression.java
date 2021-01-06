@@ -1,4 +1,4 @@
-package visitor.examples.reflective;
+package visitor.examples.classic;
 
 public class DoubleExpression extends Expression {
     private double value;
@@ -9,5 +9,10 @@ public class DoubleExpression extends Expression {
 
     public double getValue() {
         return value;
+    }
+
+    @Override
+    public void accept(ExpressionVisitor visitor) {
+        visitor.visit(this);
     }
 }
